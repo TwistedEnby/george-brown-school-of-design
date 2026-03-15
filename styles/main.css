@@ -125,7 +125,7 @@ h1{
 
 /*--- SECTION FEATURED ---*/
 .section-featured{
-  max-width: 1200px;
+  max-width: 70%;
   margin: 0 auto;
   overflow: auto;
   /* display: flow-root; */
@@ -163,34 +163,101 @@ h1{
 .section-featured .content{
   margin: 16px 16px 0 0;
   padding: 16px;
+  height: 365px;
 }
 
 .section-featured .whats-new{
   background-color: #eee;
   color: #191919;
   border-radius: 10%;
+  overflow: auto;
 }
+
+.section-featured .whats-new hr {
+  border: none;
+  height: 2px;
+  margin: 2px 0;
+  background-color: #ffbf00;
+}
+
+.section-featured .whats-new::-webkit-scrollbar {
+  width: 8px;
+}
+
+.section-featured .whats-new::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.section-featured .whats-new::-webkit-scrollbar-thumb {
+  background: #ffbf00;
+  border-radius: 10px;
+}
+
+.section-featured .whats-new::-webkit-scrollbar-thumb:hover {
+  background: #ffec40;
+}
+
 
 .section-featured .check-our-courses{
   background-color: #eee;
   color: #191919;
   border-radius: 10%;
+  overflow: auto;
 }
 
 .section-featured .check-our-courses > ul{
   padding-left: 24px;
 }
 
+.section-featured .check-our-courses::-webkit-scrollbar {
+  width: 8px;
+}
+
+.section-featured .check-our-courses::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.section-featured .check-our-courses::-webkit-scrollbar-thumb {
+  background: #ffbf00;
+  border-radius: 10px;
+}
+
+.section-featured .check-our-courses::-webkit-scrollbar-thumb:hover {
+  background: #ffec40;
+}
+
 .section-featured .important-dates{
   background-color: #eee;
   color: #191919;
   border-radius: 10%;
+  overflow: auto;
 }
 .section-featured .important-dates > ul{
   padding-left: 24px;
 }
 
-.see-more{
+.section-featured .important-dates::-webkit-scrollbar {
+  width: 8px;
+}
+
+.section-featured .important-dates::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.section-featured .important-dates::-webkit-scrollbar-thumb {
+  background: #ffbf00;
+  border-radius: 10px;
+}
+
+.section-featured .important-dates::-webkit-scrollbar-thumb:hover {
+  background: #ffec40;
+}
+
+.see-more:link,
+.see-more:visited{
   display: block;
   margin-top: 16px;
   padding: 10px 20px;
@@ -201,6 +268,11 @@ h1{
   border-radius: 200px;
   transition: background-color 0.3s, color 0.3s;
   text-align: center;
+}
+
+.see-more:hover,
+.see-more:active{
+  background-color: #ffec40;
 }
 
 .section-featured h2{
@@ -219,9 +291,10 @@ h1{
 }
 
 .section-portfolio h1{
-  color:#0065a4;
-  text-align: center;
-  margin-top: 24px;
+  color:#ffbf00;
+  text-align: left;
+  margin: 24px auto;
+  max-width: 70%;
 }
 
 .section-portfolio ul{
