@@ -464,6 +464,8 @@ h1{
   margin-top: 20px;
 }
 
+
+
 /*--- SECTION CAMPUSES ---*/
 .section-campuses{
   max-width: 70%;
@@ -606,4 +608,129 @@ footer{
 .footer-bottom a:hover{
   color: #fff2d4;
   transition: color 0.3s ease;
+}
+
+/*--- RESPONSIVE DESIGN ---*/
+@media (max-width: 768px) {
+  /* Header */
+  .header-top {
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .logo {
+    position: static;
+    margin-bottom: 10px;
+  }
+  
+  .main-nav {
+    position: static;
+    margin-top: 10px;
+  }
+  
+  .main-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .main-nav li {
+    display: block;
+    margin-left: 0;
+  }
+  
+  /* Hero */
+  .hero-text-box {
+    top: 20%;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  .btn-inverse {
+    display: block;
+    margin: 10px auto;
+    width: fit-content;
+  }
+  
+  /* Sections */
+  .section-featured,
+  .section-campuses,
+  .section-testimonials,
+  .section-alumni-spotlight,
+  .footer-content {
+    max-width: 90%;
+  }
+  
+  .section-featured aside {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+  }
+  
+  .section-featured .content {
+    height: auto;
+    padding: 16px;
+  }
+  
+  .section-portfolio li {
+    width: 50%;
+  }
+  
+  .testimonials-container,
+  .campuses-container,
+  .spotlight-container {
+    flex-direction: column;
+  }
+  
+  .testimonial,
+  .campus {
+    min-width: auto;
+  }
+  
+  .spotlight-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .spotlight-text h1 {
+    font-size: 24px;
+  }
+  
+  .footer-section {
+    margin-bottom: 30px;
+  }
+  
+  .contact-content {
+    flex-direction: column;
+  }
+  
+  .footer-map iframe {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-top {
+    flex-direction: column;
+    text-align: left;
+  }
+  .section-portfolio li {
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+  
+  .section-featured h1,
+  .section-campuses h1,
+  .section-testimonials h1 {
+    font-size: 24px;
+  }
 }
