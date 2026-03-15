@@ -5,10 +5,10 @@
 }
 
 body{
-  background-color: #eee;
+  background-color: #191919;
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
-   font-size: 100%; /* default font size is 16px */
+  font-size: 100%; /* default font size is 16px */
   text-rendering: optimizeLegibility;
 }
 
@@ -133,8 +133,9 @@ h1{
 }
 
 .section-featured h1{
-  color: #0065a4;
-  text-align: center;
+  color: #ffbf00;
+  text-align: left;
+  margin-top: 24px;
 }
 
 .section-featured > p{
@@ -142,6 +143,7 @@ h1{
   line-height: 1.5;
   font-weight: 100;
   margin: 16px 0;
+  color: #eee;
 }
 
 .section-featured aside{
@@ -159,26 +161,46 @@ h1{
 }
 
 .section-featured .content{
-  margin: 0 16px;
+  margin: 16px 16px 0 0;
   padding: 16px;
 }
 
 .section-featured .whats-new{
-  background-color: #191919;
-  color: #fff;
+  background-color: #eee;
+  color: #191919;
   border-radius: 10%;
 }
 
 .section-featured .check-our-courses{
-  background-color: #191919;
-  color: #fff;
+  background-color: #eee;
+  color: #191919;
   border-radius: 10%;
 }
 
+.section-featured .check-our-courses > ul{
+  padding-left: 24px;
+}
+
 .section-featured .important-dates{
-  background-color: #191919;
-  color: #fff;
+  background-color: #eee;
+  color: #191919;
   border-radius: 10%;
+}
+.section-featured .important-dates > ul{
+  padding-left: 24px;
+}
+
+.see-more{
+  display: block;
+  margin-top: 16px;
+  padding: 10px 20px;
+  background-color: #ffbf00;
+  color: #191919;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
 }
 
 .section-featured h2{
